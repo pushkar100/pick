@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="module" src="dist/pick.min.js"></script>
+</head>
+<body>
+	<div class="main cntnr" style="width: 450px;height: 100px;border: 1px solid #c00">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, perferendis voluptatum id quasi deleniti exercitationem magni illo sapiente possimus laborum animi aliquid voluptates eaque facere, corporis architecto! Praesentium unde, sed?
+	</div>
+	<div id="side" class="x" style="width: 100px;height: 100px;border: 1px solid #c00"></div>
+	<div class="left x" style="width: 100px;height: 100px;border: 1px solid #c00"></div>
+	<div class="right x" style="width: 100px;height: 100px;border: 1px solid #c00"></div>
+	<div>lorem</div>
+	<input type="text" class="first-name" value="Bar">
+	<input type="text" class="second-name">
+	<div class="nested">
+		<div>
+			<span>Name</span>
+			<span>Pushkar</span>
+		</div>
+	</div>
+	<section class="n1">
+		<div class="n12">
+			<div id="ni3" data-Blah="123">
+				<div class="n14" style="width: 500px; height: 50px;border: 1px solid #cc0"></div>
+			</div>
+		</div>
+		<div class="n22" style="width: 500px;border: 1px solid #cc0">
+			<div class="a m"></div>
+			<div id="b">
+				<div id="bb"></div>
+				<div class="bb2"></div>
+			</div>
+			<span>
+				<span class="c m">
+					<span class="cc">
+						<span class="ccc"></span>
+						<span class="ccc2 m"></span>
+					</span>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</span>
+			</span>
+		</div>
+	</section>
+	<div class="last" data-uid="13132"></div>
+	<script>
+		// console.log($('.main'));
+		// console.log($('#side'));
+		// console.log($('div'));
+		// // console.log($('.non-existent')); // supposed to throw error
+		/*setTimeout(() => {
+			console.log($('input.first-name').val());
+		}, 5000);*/
+		// console.log($('input.first-name').val());
+		// console.log($('input').val('fdsfs'));
+		// console.log($('input.non-existent-name'));
+		// console.log($('span'));
+		// console.log($('#side').attr('id', undefined));
+		// console.log($('#side').attr('title', 13132));
+		// console.log($('div').attr('title', 'same'));
+		// console.log($('#side').prop('custom-prop', 1));
+		// console.log($('#side').prop('custom-prop'));
+		// console.log($('.last').data('uid'));
+		// console.log($('.last').data('uid', '1111'));
+		// console.log($('.last').data('uid'));
+		// console.log($('.main').text());
+		// console.log($('div').text('Override text'));
+		// console.log($('.nested').html());
+		// console.log($('.nested').html('<span>overridden</span>'));
+		// console.log($('.nested').html());
+		// $('.nested').addClass('new1 new2 new-3 new_4');
+		// $('.nested').removeClass('new1');
+		// $('.nested').removeClass('new2 new_4');
+		// console.log($('.main').hasClass('main'));
+		// console.log($('.main').hasClass('cntnr'));
+		// console.log($('.main').hasClass('nn-exst'));
+		// console.log($('.main'));
+		// console.log($('textarea'));
+		// console.log($('textarea').text('asadsa'));
+		// console.log($(document.querySelector('.main')));
+		// console.log($(document.querySelector('.main')).text('Hi'));
+		// console.log(document.querySelectorAll('div'));
+		// console.log($(document.querySelectorAll('div')).text('Hi'));
+		// console.log($($('.main')));
+		// console.log($($('.main')).html('fsfdsfdsfds'));
+		// console.log($('span').parent());
+		// console.log($('span').parent().html('done'));
+		// console.log($('span').closest(''));
+		// console.log($('.n14').closest('.n1'));
+		// console.log($('.n14').closest('#ni3'));
+		// console.log($('.n14').closest('#ni3').data('Blah'));
+		// console.log($('.n14').closest('.n14'));
+		// console.log($('.n14').closest('noexist'));
+		// console.log($('.n14').closest('noexist').text('11')); // Should throw error
+		// console.log($('.n22').find('.m'));
+		// console.log($('.n22').find('#bb').text('sfs'));
+		// console.log($('.n22').find('textarea').val(123));
+		// console.log($('#b').nextElement());
+		// console.log($('#b').prevElement());
+		// console.log($('#b').append("<div class='bleh'><a href='test0'>test01</a><a href='test1'>test02</a><a href='test2'>test03</a></div>"));
+		// console.log($('#b').append("<div><a href='test0'>test01</a><a href='test1'>test02</a></div><a href='test2'>test03</a>"));
+		// console.log($('#b').append($('.n12')));
+		// console.log($('#b').prepend("<div class='bleh'><a href='test0'>test01</a><a href='test1'>test02</a><a href='test2'>test03</a></div>"));
+		// console.log($('#b').prepend("<div><a href='test0'>test01</a><a href='test1'>test02</a></div><a href='test2'>test03</a>"));
+		// console.log($('#b').prepend($('.n12')));
+		// console.log($('.n12').after("<div><a href='test0'>test01</a><a href='test1'>test02</a></div><a href='test2'>test03</a>"));
+		// console.log($('.n12').before("<div><a href='test0'>test01</a><a href='test1'>test02</a></div><a href='test2'>test03</a>"));
+		// console.log($('.n12').remove());
+		// console.log($('.n12').replace("<div><a href='test0'>test01</a><a href='test1'>test02</a></div><a href='test2'>test03</a>"));
+		// // console.log($('span').each(el => { console.log($(el)); }));
+		// console.log($('span'));
+		// console.log($('span').first());
+		// console.log($('span').last());
+		// console.log($('span').get(1));
+		
+		// let fn = e => console.log(e.target);
+		// $('#side, .left, .right').on('click', fn);
+		// $('.left').on('click', () => console.log(2));
+		// setTimeout(() => { $('.right').off('click') }, 3000);
+		// setTimeout(() => { $('.left').off('click', fn) }, 3000);
+		// $('.nested').on('click', 'span', fn);
+		// setTimeout(() => { $('.nested').off('click', 'span', fn) }, 3000);
+		// $(document).on('focus', 'textarea', () => console.log(1));
+		// setTimeout(() => { $(document).off('focus', 'textarea') }, 3000);
+		// $('#side, .left, .right').once('click', fn);
+		// $('body').once('click', '#side', fn);
+		// $('.left').on('click', function() {
+		// 	$('.right').trigger('click');
+		// });
+		// $('.right').on('click', () => {
+		// 	console.log(1);
+		// });
+		
+		// $.ajax('/giftcards-email.html', 'get')
+		// 	.then(d => console.log(d.text()));
+	</script>
+</body>
+</html>

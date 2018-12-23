@@ -1,0 +1,29 @@
+{
+  "name": "pick",
+  "version": "1.0.0",
+  "description": "Pick - A light-weight jQuery-like DOM library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://pushkar100:690Q3WaIvWa7@github.com/pushkar100/pick.git"
+  },
+  "keywords": [
+    "javascript",
+    "library",
+    "DOM",
+    "web"
+  ],
+  "author": "Pushkar DK",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pushkar100/pick/issues"
+  },
+  "homepage": "https://github.com/pushkar100/pick#readme",
+  "devDependencies": {
+    "rollup": "^0.68.1",
+    "rollup-plugin-uglify-es": "0.0.1"
+  }
+}
